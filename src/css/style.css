@@ -3,12 +3,12 @@
 
 /* other css file imports */
 @import url("sections/header.css");
-/* @import url("sections/hero.css");
+@import url("sections/hero.css");
 @import url("sections/about.css");
 @import url("sections/popular.css");
 @import url("sections/trending.css");
 @import url("sections/subscribe.css");
-@import url("sections/footer.css"); */ 
+@import url("sections/footer.css");
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
@@ -26,6 +26,8 @@
 
   --color-white: #fff;
   --color-creamson: #fff0de;
+
+  --left-overlay-width: 100%;
 }
 
 * {
@@ -45,7 +47,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .flex-center {
   display: flex;
@@ -135,10 +136,10 @@ a {
     border-right: none;
   }
 
-  .about-us__button {
+   .about-us__button {
     display: block;
     top: 47%;
-  }
+  } 
 }
 
 @media screen and (max-width: 550px) {
@@ -163,7 +164,6 @@ a {
   }
 }
 /* END: about us media queries */
-
 
 /* START: header media querie */
 @media screen and (max-width: 900px) {
